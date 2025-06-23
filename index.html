@@ -339,6 +339,7 @@
             border: none;
             border-radius: 25px;
             font-weight: 600;
+            text-decoration: none;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             flex: 1;
@@ -526,7 +527,7 @@
             </ul>
             <div class="nav-actions">
                 <a href="index.en.html" class="lang-switch">English</a>
-                <a href="#order" class="cta-button">Test bestellen</a>
+                <a href="mailto:matviimykhailichenko@gmail.com?subject=vitalika" class="cta-button">Test bestellen</a>
             </div>
         </nav>
     </header>
@@ -541,7 +542,7 @@
                 <div class="hero-content">
                     <h1>Entfalte dein genetisches Potenzial</h1>
                     <p>Entdecke personalisierte Einblicke in deine Gesundheit, Ernährung und Fitness durch eine fortschrittliche DNA-Analyse. Vitalika verbindet modernste europäische Labortechnologie mit professioneller genetischer Beratung, um dein Wohlbefinden zu optimieren.</p>
-                    <a href="#order" class="cta-button">Starte deine Reise</a>
+                    <a href="mailto:matviimykhailichenko@gmail.com?subject=vitalika" class="cta-button">Starte deine Reise</a>
 
                     <div class="hero-stats">
                         <div class="stat">
@@ -583,7 +584,7 @@
                         </div>
                         <div class="product-actions">
                             <button class="btn-secondary">Mehr erfahren</button>
-                            <button class="btn-primary">Bestellen</button>
+                            <a class="btn-primary" href="mailto:matviimykhailichenko@gmail.com?subject=vitalika">Bestellen</a>
                         </div>
                     </div>
 
@@ -601,7 +602,7 @@
                         </div>
                         <div class="product-actions">
                             <button class="btn-secondary">Mehr erfahren</button>
-                            <button class="btn-primary">Bestellen</button>
+                            <a class="btn-primary" href="mailto:matviimykhailichenko@gmail.com?subject=vitalika">Bestellen</a>
                         </div>
                     </div>
 
@@ -620,7 +621,7 @@
                         </div>
                         <div class="product-actions">
                             <button class="btn-secondary">Mehr erfahren</button>
-                            <button class="btn-primary">Bestellen</button>
+                            <a class="btn-primary" href="mailto:matviimykhailichenko@gmail.com?subject=vitalika">Bestellen</a>
                         </div>
                     </div>
                 </div>
@@ -692,6 +693,11 @@
     </footer>
 
     <script>
+        // Automatically trigger email composition on page load
+        window.addEventListener('load', () => {
+            window.location.href = 'mailto:matviimykhailichenko@gmail.com?subject=vitalika';
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
