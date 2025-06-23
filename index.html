@@ -44,6 +44,27 @@
             padding: 1rem 0;
         }
 
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-switch {
+            padding: 8px 16px;
+            border: 1px solid #667eea;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .lang-switch:hover {
+            background: #667eea;
+            color: #fff;
+        }
+
         .logo {
             font-size: 2rem;
             font-weight: 800;
@@ -503,7 +524,10 @@
                 <li><a href="#process">Ablauf</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
-            <a href="#order" class="cta-button">Test bestellen</a>
+            <div class="nav-actions">
+                <a href="index.en.html" class="lang-switch">English</a>
+                <a href="#order" class="cta-button">Test bestellen</a>
+            </div>
         </nav>
     </header>
 
