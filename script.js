@@ -1,8 +1,3 @@
-        // Automatically trigger email composition on page load
-        window.addEventListener('load', () => {
-            window.location.href = 'mailto:matviimykhailichenko@gmail.com?subject=vitalika';
-        });
-
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
